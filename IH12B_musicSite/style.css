@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.title{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 200px;
+}
+.title h2{
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: absolute;
+  display: inline-block;
+  padding: 1rem 4rem;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #212529;
+  left: 30%;
+}
+
+
+
+
+
+.images{
+  position: relative;
+  top: 350px;
+  margin-left: 280px;
+  padding-bottom: 100px;
+}
+.music1{
+  position: absolute;
+  left: 12%;
+  width: 200px;
+  height: auto;
+}
+.music2{
+  position: absolute;
+  left: 32%;
+  width: 200px;
+  height: auto;
+}
+.music3{
+  position: absolute;
+  left: 52%;
+  width: 200px;
+  height: auto;
+}
+
+
+.music1:hover,
+.music2:hover,
+.music3:hover{
+	animation: rumble 0.12s linear infinite;
+}
+ 
+@keyframes rumble{
+	0%	{transform:rotate(0deg)	translate(0,0);}
+	12.5%	{transform:rotate(0.4deg)	translate(1px,-1px);}
+	25%	{transform:rotate(0.8deg)	translate(0px,1px);}
+	37.5%	{transform:rotate(0.4deg)	translate(-1px,0);}
+	50%	{transform:rotate(0deg)	translate(0,0);}
+	62.5%	{transform:rotate(-0.4deg)	translate(1px,0);}
+	75%	{transform:rotate(-0.8deg)	translate(0,1px);}
+	87.5%	{transform:rotate(-0.4deg)	translate(-1px,-1px);}
+	100%	{transform:rotate(0deg)	translate(0,0);}
+}
+
+
+
+
+
+
+

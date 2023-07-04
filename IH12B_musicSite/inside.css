@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0; 
+
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+#box1, 
+#box2,
+#box3{
+  width: 100%;
+  height: 753px;
+}
+/*
+  背景用
+*/
+body {
+  width: 100%;
+  height: auto;
+  background: #78e5e5;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+/*
+  ビジュアル設定
+
+  ボタン
+  タイトルスクロール
+*/
+button.btn,
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+#title{
+  position: relative;
+  top: 135px;
+  width: 100%;
+  height: 70px;
+}
+#title h2{
+  position: absolute;
+  font-size: 270%;
+  width: 100%;
+  height: 70px;
+}
+
+
+/*
+  再生、停止ボタン
+*/
+.a_play{
+  position: relative;
+  top: 400px;
+}
+#play,
+#play2,
+#play3{
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  left: 37%;
+}
+
+
+/*
+  音量ボタン
+*/
+.a_volume{
+  position: relative;
+  top: 500px;
+}
+#volume-up{
+  position: absolute;
+  left: 37%;
+}
+#volume-down{
+  position: absolute;
+  left: 50%;
+}
+#volume-up,
+#volume-down{
+  width: 200px;
+  height: 50px;
+}
+
+
+/*
+  ミュートボタン
+*/
+.a_mute{
+  position: relative;
+  top: 550px;
+}
+#mute{
+  position: absolute;
+  left: 37%;
+  width: 400px;
+  height: auto;
+}
+
+
+/*
+  画像
+*/
+.img{
+  width: 100%;
+  height: auto;
+}
+.image{
+  position: relative;
+  top: 180px;
+}
+.img_record{
+  top: 38%;
+  display: inline-block;
+}
+#record1,
+#record2{
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+#record1{
+  position: absolute;
+  left: 3%;
+}
+#record2{
+  position: absolute;
+  right: 3%;
+}
+.img_logo1{
+  position: relative;
+  width: 180px;
+  height: auto;
+  top: 90px;
+}
+.img_logo2{
+  position: absolute;
+  left: 8%;
+}
+
+
+
+
+.img_logo1:hover, 
+.btn:hover{
+	animation: rumble 0.12s linear infinite;
+}
+ 
+@keyframes rumble{
+	0%	{transform:rotate(0deg)	translate(0,0);}
+	12.5%	{transform:rotate(0.4deg)	translate(1px,-1px);}
+	25%	{transform:rotate(0.8deg)	translate(0px,1px);}
+	37.5%	{transform:rotate(0.4deg)	translate(-1px,0);}
+	50%	{transform:rotate(0deg)	translate(0,0);}
+	62.5%	{transform:rotate(-0.4deg)	translate(1px,0);}
+	75%	{transform:rotate(-0.8deg)	translate(0,1px);}
+	87.5%	{transform:rotate(-0.4deg)	translate(-1px,-1px);}
+	100%	{transform:rotate(0deg)	translate(0,0);}
+}
